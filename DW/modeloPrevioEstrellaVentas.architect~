@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>modeloPrevioEstrellaVentas</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="53cad296-6193-48e9-ae88-d18c6d7ae674" name="clientes" objectType="TABLE" physicalName="clientes" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX2" populated="true" UUID="55f20f19-3e57-423a-9db1-8fbd7169e285" clustered="false" name="clientes_pk" physicalName="dim_customer_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB3" populated="true" UUID="521d6989-3c73-46af-a90a-0d83f66ede74" name="productos" objectType="TABLE" physicalName="productos" >
+   <remarks></remarks>
+   <folder id="FOLTAB31" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX4" populated="true" UUID="9a257631-5f05-433f-bfd8-6e7fb58bf5ce" clustered="false" name="productos" physicalName="dim_product" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB5" populated="true" UUID="772af89f-d308-44a7-9131-6d7a12c5fca4" name="area_postal" objectType="TABLE" physicalName="area_postal" >
+   <remarks></remarks>
+   <folder id="FOLTAB51" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX6" populated="true" UUID="a4c34876-0299-41c5-ba26-f6d06459d34f" clustered="false" name="area_postal_pk" physicalName="dim_geography_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB7" populated="true" UUID="76ee0eba-56f1-423b-b7d2-3b0db05b0617" name="ordenes_compra" objectType="TABLE" physicalName="ordenes_compra" >
+   <remarks></remarks>
+   <folder id="FOLTAB71" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX8" populated="true" UUID="6c17f4f0-512d-46d3-b6f2-2c340704a5a3" clustered="false" name="ordenes_compra_pk" physicalName="fact_order_item_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB9" populated="true" UUID="e1dc234a-0365-4dfe-a0c0-4be41f60b66b" name="ordenes_compra_detalle" objectType="TABLE" physicalName="ordenes_compra_detalle" >
+   <remarks></remarks>
+   <folder id="FOLTAB91" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX10" populated="true" UUID="53eff404-9b7e-4a3b-b908-09be08a045f9" clustered="false" name="ordenes_compra_detalle_pk" physicalName="ordenes_compra_detalle_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB11" populated="true" UUID="1fbd8c87-881b-461f-babb-481ea5f235e3" name="ciudades" objectType="TABLE" physicalName="ciudades" >
+   <remarks></remarks>
+   <folder id="FOLTAB111" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX12" populated="true" UUID="2a6e7789-b5da-49ae-b659-6d84bb23076f" clustered="false" name="ciudades_pk" physicalName="ciudades_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB13" populated="true" UUID="f472cc55-c457-4e1b-a8d8-fc91f46e75ae" name="paises" objectType="TABLE" physicalName="paises" >
+   <remarks></remarks>
+   <folder id="FOLTAB131" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX14" populated="true" UUID="71163369-73d2-464b-b13b-7a6ab6e55ff2" clustered="false" name="paises_pk" physicalName="paises_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB15" populated="true" UUID="ba5c1ac1-4bc8-4113-bda3-1df57a71ebcf" name="tipos_cliente" objectType="TABLE" physicalName="tipos_cliente" >
+   <remarks></remarks>
+   <folder id="FOLTAB151" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX16" populated="true" UUID="bd917ceb-3d30-4c6e-8236-cfe1cc348c76" clustered="false" name="tipos_cliente_pk" physicalName="tipos_cliente_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB17" populated="true" UUID="a9f56f1e-2754-46ef-b76f-b1c9309e931f" name="historial_produccion" objectType="TABLE" physicalName="historial_produccion" >
+   <remarks></remarks>
+   <folder id="FOLTAB171" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX18" populated="true" UUID="e3a289f9-c6cf-4fc7-a470-2bc05f1b2494" clustered="false" name="historial_produccion_pk" physicalName="historial_produccion_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB19" populated="true" UUID="f617d931-5222-4ee3-968e-a5ed1444d67d" name="tipos_producto" objectType="TABLE" physicalName="tipos_producto" >
+   <remarks></remarks>
+   <folder id="FOLTAB191" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX20" populated="true" UUID="4a5d2c51-85be-4592-9860-f94b215656c3" clustered="false" name="tipos_producto_pk" physicalName="tipos_producto_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL21" populated="true" UUID="ab0537c4-b9ea-4b67-97ca-e791f57dd314" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="true" name="clientes_ordenes_compra_fk" physicalName="clientes_ordenes_compra_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+   </relationship>
+   <relationship id="REL22" populated="true" UUID="b21652ae-f008-4de3-b9bf-512f018d7f5f" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="true" name="productos_ordenes_compra_detalle_fk" physicalName="productos_ordenes_compra_detalle_fk" pk-table-ref="TAB3" pkCardinality="2" updateRule="3" >
+   </relationship>
+   <relationship id="REL23" populated="true" UUID="cdfcedbb-5af6-45c6-a82d-9eb36e133263" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="true" name="area_postal_ordenes_compra_fk" physicalName="area_postal_ordenes_compra_fk" pk-table-ref="TAB5" pkCardinality="2" updateRule="3" >
+   </relationship>
+   <relationship id="REL24" populated="true" UUID="1cbc9472-e984-4cb8-9722-fb1c14fa01fa" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="true" name="ordenes_compra_ordenes_compra_detalle_fk" physicalName="ordenes_compra_ordenes_compra_detalle_fk" pk-table-ref="TAB7" pkCardinality="2" updateRule="3" >
+   </relationship>
+   <relationship id="REL25" populated="true" UUID="48504e22-b7c4-44c0-a36a-327d37847b3c" deferrability="7" deleteRule="3" fk-table-ref="TAB5" fkCardinality="7" identifying="true" name="ciudades_area_postal_fk" physicalName="ciudades_area_postal_fk" pk-table-ref="TAB11" pkCardinality="2" updateRule="3" >
+   </relationship>
+   <relationship id="REL26" populated="true" UUID="1b69c747-0ed6-431e-bf05-5669430d5125" deferrability="7" deleteRule="3" fk-table-ref="TAB11" fkCardinality="7" identifying="true" name="paises_ciudades_fk" physicalName="paises_ciudades_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+   </relationship>
+   <relationship id="REL27" populated="true" UUID="09802fa2-1e80-46dc-8b9e-955e2b14cac6" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="tipos_cliente_clientes_fk" physicalName="tipos_cliente_clientes_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+   </relationship>
+   <relationship id="REL28" populated="true" UUID="42fce406-935d-4e7f-8191-f2891b35e4ad" deferrability="7" deleteRule="3" fk-table-ref="TAB3" fkCardinality="3" identifying="true" name="historial_produccion_productos_fk" physicalName="historial_produccion_productos_fk" pk-table-ref="TAB17" pkCardinality="3" updateRule="3" >
+   </relationship>
+   <relationship id="REL29" populated="true" UUID="d6e45fbc-d77f-4791-ac58-4dd68866abe4" deferrability="7" deleteRule="3" fk-table-ref="TAB3" fkCardinality="7" identifying="true" name="tipos_producto_productos_fk" physicalName="tipos_producto_productos_fk" pk-table-ref="TAB19" pkCardinality="2" updateRule="3" >
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="334" y="308" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB3" x="923" y="638" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB5" x="282" y="597" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB7" x="561" y="474" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="540" y="549" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB11" x="374" y="730" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB13" x="551" y="795" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB15" x="303" y="212" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB17" x="1116" y="633" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB19" x="948" y="494" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL24" pkConnection="0.5245901639344263" fkConnection="0.47752808988764045" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL26" pkConnection="0.3125" fkConnection="0.6875" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL25" pkConnection="0.3484848484848485" fkConnection="0.611764705882353" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL27" pkConnection="0.5161290322580645" fkConnection="0.4576271186440678" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL21" pkConnection="0.6875" fkConnection="0.0" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="129"/>
+  <table-link relationship-ref="REL23" pkConnection="0.8823529411764706" fkConnection="0.40625" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="40"/>
+  <table-link relationship-ref="REL22" pkConnection="0.3125" fkConnection="1.0" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="66"/>
+  <table-link relationship-ref="REL29" pkConnection="0.45454545454545453" fkConnection="0.5526315789473685" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL28" pkConnection="0.5" fkConnection="0.46875" rLineColor="0x4c4c4c" pkLabelText="" fkLabelText="" orientation="18"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
